@@ -1,13 +1,11 @@
-let person = {
-  name: "Vinayak",
-  age: 34,
-  city: "Belgaum",
-  skills: ["HTMl", "CSS", "JavaScript", "React"],
-};
+const applicants = [
+  { name: "Vinayak", experience: 10 },
+  { name: "Rahul", experience: 1 },
+  { name: "Priya", experience: 5 },
+  { name: "Amit", experience: 2 },
+  { name: "Sneha", experience: 8 },
+];
 
-console.log(`My name is ${person.name} and my city is ${person.city}`);
-console.log(`My age is ${person.age}`);
+const highExp = applicants.filter((applicant) => applicant.experience > 3);
 
-person.skills.forEach((skill, index) => {
-  console.log(`My Skill ${index + 1} ${skill}`);
-});
+console.log(highExp);
